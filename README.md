@@ -1,3 +1,5 @@
+If you're seeing incomplete docs, please check back just before 1pm
+
 # Welcome too Express Jollof!
 
 Express jollof is a simple demo application that tries to create real-time scenerios where an even can be published from somewhere outside the Jollof app.
@@ -7,4 +9,10 @@ Express jollof is a simple demo application that tries to create real-time scene
 - Complete all the TODOs:
 - Check the pubspec.yaml file to make sure your dart version is compatible
 - Run flutter pub get
-- Insert your Ably API key 
+- Insert your Ably API key (make a project wide search for "TODO", you'll see where to put the key)
+
+## Run the App
+To run the app, you can use your preferred method, otherwise,
+- make sure you're connected to a device
+- run the command `flutter run` in a terminal at the root level of this project
+
