@@ -16,7 +16,7 @@ class AblyProvider extends ChangeNotifier {
   AblyProvider(this.context) {
     clientOptions = ably.ClientOptions(
       // TODO: PUT YOUR ALBY API KEY HERE
-      key: 'YOUR_ABLY_API_KEY',
+      key: 'D9fsog.FW7XJw:pOCV38HQjCrxL2JKUJ_0oQ0oRpklMUlL1JoMd2943dc',
     );
     realtime = ably.Realtime(options: clientOptions);
     _initializeAlby();
@@ -94,11 +94,15 @@ class AblyProvider extends ChangeNotifier {
     );
   }
 
+  void closeConnectionToJollofExpress() {
+    debugPrint("Closing connection");
+    realtime.connection.close();
+  }
+
   /// disposes this resource
   @override
   void dispose() {
-    debugPrint("Closing connection");
-    realtime.connection.close();
+    closeConnectionToJollofExpress();
     super.dispose();
   }
 }

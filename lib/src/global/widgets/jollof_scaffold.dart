@@ -8,16 +8,19 @@ class JollofScaffold extends StatelessWidget {
     super.key,
     required this.appBarTitle,
     required this.body,
+    this.fab,
   });
 
   final String appBarTitle;
   final Widget body;
+  final Widget? fab;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: JollofExpressAppBar(appBarTitle),
       extendBodyBehindAppBar: true,
+      floatingActionButton: fab,
       body: MarbleBackground(child: body),
     );
   }
