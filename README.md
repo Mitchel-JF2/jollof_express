@@ -16,3 +16,7 @@ To run the app, you can use your preferred method, otherwise,
 - run the command `flutter run` in a terminal at the root level of this project
 - voila! you can begin to test the app for the requirements
 
+## Publishing Messages
+In the Ably console, the only type of message that Jollof Express recognizes is a string representaion of an integer.
+It accepts the range 0...5
+This range depicts the levels/stages of the order

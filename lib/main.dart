@@ -8,6 +8,8 @@ import 'firebase_options.dart';
 import 'src/app.dart';
 import 'src/modules/authentication/providers/authentication_provider.dart';
 
+// This is the beginning of everything... 
+// let's walk through this project together
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -16,8 +18,16 @@ void main() async {
   runApp(
     MultiProvider(
       providers: [
+        // this provider handles both google and github sign in
         Provider(create: (context) => const AuthenticationProvider()),
+        
+        // this is a memory pool that holds only states that are referenced 
+        // in more than one place in the app. 
+        // This approach helps to reduce data duplicates 
+        // and it improves memory efficiency 
         ChangeNotifierProvider(create: (context) => GlobalProvider()),
+
+        // This holds everything that has to do with Ably
         ChangeNotifierProvider(create: (context) => AblyProvider(context)),
       ],
       child: const JollofExpressApp(),
