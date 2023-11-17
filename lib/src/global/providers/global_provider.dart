@@ -1,4 +1,3 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:jollof_express/src/global/utils/bot_toast.dart';
 import 'package:jollof_express/src/global/utils/duration_extension.dart';
@@ -19,15 +18,5 @@ class GlobalProvider extends ChangeNotifier {
     }
     currentOrderLevel = OrderLevel.values[status];
     notifyListeners();
-  }
-
-  // TODO: remove this method
-  void signOut() async {
-    try {
-      await FirebaseAuth.instance.signOut();
-    } on Exception catch (e, s) {
-      debugPrint(e.toString());
-      debugPrintStack(stackTrace: s);
-    }
   }
 }

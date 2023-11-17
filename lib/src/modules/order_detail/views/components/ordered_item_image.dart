@@ -41,7 +41,8 @@ class _OrderedItemImageState extends State<OrderedItemImage>
       child: ScaleTransition(
         scale: scale,
         child: CircleAvatar(
-          radius: 130, // TODO: Make this responsive
+          radius:
+              130, // TODO: Make this responsive with your new responsiveness formula
           backgroundImage: AssetImage(images[index]),
         ),
       ),
