@@ -5,6 +5,7 @@ import 'package:jollof_express/src/global/providers/global_provider.dart';
 import 'package:jollof_express/src/global/utils/bot_toast.dart';
 import 'package:provider/provider.dart';
 
+/// holds all the connection configuration for ably
 class AblyProvider extends ChangeNotifier {
   AblyProvider(this.context) {
     clientOptions = ably.ClientOptions(
