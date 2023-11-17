@@ -4,6 +4,8 @@ import 'package:provider/provider.dart';
 
 import '../../../providers/order_detail_provider.dart';
 
+/// an animated container that increases by multiples 
+/// of the local variable [progress]
 class TrackingProgressBar extends StatelessWidget {
   const TrackingProgressBar({super.key});
 

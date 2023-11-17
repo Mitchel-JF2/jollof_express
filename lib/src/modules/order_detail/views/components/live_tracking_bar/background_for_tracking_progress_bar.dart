@@ -4,6 +4,8 @@ import 'package:provider/provider.dart';
 
 import '../../../providers/order_detail_provider.dart';
 
+/// a grey container with fixed height 
+/// to depict the total length of the progress
 class BackgroundForTrackingProgressBar extends StatelessWidget {
   const BackgroundForTrackingProgressBar({super.key});
 

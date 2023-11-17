@@ -9,6 +9,7 @@ import 'package:jollof_express/src/global/widgets/pulse_animation.dart';
 import 'package:jollof_express/src/modules/order_tracking/providers/order_tracking_provider.dart';
 import 'package:provider/provider.dart';
 
+/// a fixed array of the levels of the Jollof order
 class LiveTrackingItems extends StatelessWidget {
   const LiveTrackingItems({
     super.key,
@@ -47,9 +48,7 @@ class LiveTrackingItems extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            orderTrackingProvider.orderLevelDescription(
-                              OrderLevel.values[i],
-                            ),
+                            OrderLevel.values[i].description,
                             style: AppStyles.body.copyWith(
                               color: isCompleted ? transparent : null,
                             ),

@@ -8,6 +8,7 @@ import 'package:provider/provider.dart';
 
 import '../../../providers/order_detail_provider.dart';
 
+/// an array of circle avatars to depict each level
 class TrackingProgressLevels extends StatelessWidget {
   const TrackingProgressLevels({super.key});
 

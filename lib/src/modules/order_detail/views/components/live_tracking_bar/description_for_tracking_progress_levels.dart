@@ -4,6 +4,8 @@ import 'package:jollof_express/src/global/utils/order_level.dart';
 import 'package:jollof_express/src/modules/order_detail/providers/order_detail_provider.dart';
 import 'package:provider/provider.dart';
 
+/// just below the circle avatars it represents order level 
+/// with a short description
 class DescriptionForTrackingProgressLevels extends StatelessWidget {
   const DescriptionForTrackingProgressLevels({
     super.key,

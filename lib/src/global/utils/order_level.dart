@@ -1,13 +1,31 @@
-/// this enum contains the different levels/stages of Orders 
+/// this enum contains the different levels/stages of Orders
 enum OrderLevel {
-  placed("Placed"),
-  accepted("Accepted"),
-  pickUpInProgress("Pick Up"),
-  onTheWayToCustomer("In Transit"),
-  arrived("Arrived"),
-  delivered("Delivered");
+  placed(
+    name: "Placed",
+    description: "A vendor will soon accept your order",
+  ),
+  accepted(
+    name: "Accepted",
+    description: "The vendor is preparing your order",
+  ),
+  pickUpInProgress(
+    name: "Pick Up",
+    description: "A rider is on his way to pick up your order",
+  ),
+  onTheWayToCustomer(
+    name: "In Transit",
+    description: "The rider is bringing your order to you",
+  ),
+  arrived(
+    name: "Arrived",
+    description: "Your jollof is here, come and pick it up",
+  ),
+  delivered(
+    name: "Delivered",
+    description: "Oya enjoy! You sef you don try!",
+  );
 
-  final String name;
+  final String name, description;
 
-  const OrderLevel(this.name);
+  const OrderLevel({required this.name, required this.description});
 }
