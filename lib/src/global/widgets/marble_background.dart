@@ -14,6 +14,7 @@ class MarbleBackground extends StatelessWidget {
     return Container(
       constraints: const BoxConstraints.expand(),
       decoration: const BoxDecoration(
+        color: Colors.black,
         image: DecorationImage(
           image: AssetImage(AssetPath.marbleBackground),
           fit: BoxFit.cover,

@@ -1,0 +1,4 @@
+enum PulseAnimationType{
+  fade,
+  scale
+}

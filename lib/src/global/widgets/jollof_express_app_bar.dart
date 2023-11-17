@@ -11,11 +11,14 @@ class JollofExpressAppBar extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      leading: const BackButton(),
+      // leading: const BackButton(),
       centerTitle: true,
       backgroundColor: AppColors.transparent,
       title: Text(title),
-      systemOverlayStyle: SystemUiOverlayStyle.dark,
+      systemOverlayStyle: const SystemUiOverlayStyle(
+        statusBarIconBrightness: Brightness.dark,
+        statusBarColor: Colors.transparent,
+      ),
     );
   }
 

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:jollof_express/src/config/themes/app_colors.dart';
 
 abstract class AppTheme {
   static final light = ThemeData(
-    colorScheme: ColorScheme.fromSeed(seedColor: AppColors.deepPurple),
+    colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
     useMaterial3: true,
   );
 

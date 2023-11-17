@@ -15,7 +15,7 @@ class BackgroundForTrackingProgressBar extends StatelessWidget {
         padding: provider.liveTrackingBarHorizontalPadding,
         child: Container(
           alignment: Alignment.centerLeft,
-          color: AppColors.grey,
+          color: AppColors.grey.withOpacity(.5),
           height: provider.trackingBarHeight,
           width: double.infinity,
         ),

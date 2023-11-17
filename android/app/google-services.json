@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "781979354708",
+    "project_id": "jollof-express",
+    "storage_bucket": "jollof-express.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781979354708:android:769c4668e65fd482b2cfc1",
+        "android_client_info": {
+          "package_name": "com.jollof_express.jollof_express"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781979354708-efkpfq4s7jd51njl4ltah8do1llja5s6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJouZeSJWApK3bSJ2FJ4JIeL_v7XGiwh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781979354708-efkpfq4s7jd51njl4ltah8do1llja5s6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "781979354708-5lctcif6arf0du5v5fvkh2s2t81kkdna.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.jollofexpress.jollofExpress"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
