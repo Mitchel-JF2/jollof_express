@@ -6,6 +6,7 @@ import 'package:jollof_express/src/global/utils/order_level.dart';
 
 /// holds all the shared state in this application
 class GlobalProvider extends ChangeNotifier {
+  
   /// holds the current level of the order
   OrderLevel currentOrderLevel = OrderLevel.values[0];
 
