@@ -9,7 +9,7 @@ import 'package:jollof_express/src/global/widgets/pulse_animation.dart';
 import 'package:jollof_express/src/modules/order_tracking/providers/order_tracking_provider.dart';
 import 'package:provider/provider.dart';
 
-/// a fixed array of the levels of the Jollof order
+/// a fixed array of the levels involved in this Jollof ordering
 class LiveTrackingItems extends StatelessWidget {
   const LiveTrackingItems({
     super.key,
@@ -26,14 +26,13 @@ class LiveTrackingItems extends StatelessWidget {
             builder: (context, value, child) {
               var isCompleted = i > value.currentOrderLevel.index;
               var transparent = AppColors.transparent;
-              var lastLevelIndex = OrderLevel.values.length - 1;
               return Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     PulseAnimation(
-                      play: i == lastLevelIndex
+                      play: i == value.lastLevelIndex
                           ? false
                           : value.currentOrderLevel.index == i,
                       type: PulseAnimationType.fade,
@@ -56,10 +55,14 @@ class LiveTrackingItems extends StatelessWidget {
                         ],
                       ),
                     ),
+                    // show a checkbox that depicts that an order is complete
                     AnimatedCrossFade(
                       duration: 500.ms,
                       crossFadeState: orderTrackingProvider.showCheckMark(
-                          i, value.currentOrderLevel.index, lastLevelIndex),
+                        i,
+                        value.currentOrderLevel.index,
+                        value.lastLevelIndex,
+                      ),
                       firstChild: const SizedBox.square(dimension: 50),
                       secondChild: Checkbox(
                         value: true,
