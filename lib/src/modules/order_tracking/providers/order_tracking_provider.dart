@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:jollof_express/src/global/utils/order_level.dart';
 
+/// this is a scoped provider, 
+/// it only contains state relating to OrderTrackingViews
 class OrderTrackingProvider {
   OrderTrackingProvider(this.context);
 
   final BuildContext context;
 
+  /// describes each level of [OrderLevel]
   String orderLevelDescription(OrderLevel level) {
     switch (level) {
       case OrderLevel.placed:

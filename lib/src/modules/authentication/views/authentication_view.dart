@@ -5,6 +5,9 @@ import 'package:jollof_express/src/modules/order_detail/providers/order_detail_p
 import 'package:jollof_express/src/modules/order_detail/views/order_detail_view.dart';
 import 'package:provider/provider.dart';
 
+/// This screen handles the authentication flow for google and github sign in
+/// If the user is signed in, the app will automatically default to 
+/// the Order Detail screen
 class AuthenticationView extends StatelessWidget {
   const AuthenticationView({super.key});
 
@@ -19,9 +22,6 @@ class AuthenticationView extends StatelessWidget {
           create: (context) => OrderDetailProvider(context),
           child: const OrderDetailView(),
         );
-        // return const Center(
-        //   child: Text("Hello World"),
-        // );
       },
     );
   }

@@ -1,3 +1,4 @@
+/// this enum contains the different levels/stages of Orders 
 enum OrderLevel {
   placed("Placed"),
   accepted("Accepted"),

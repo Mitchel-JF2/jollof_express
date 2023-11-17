@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 
 import '../../providers/authentication_provider.dart';
 
+/// Displays the two buttons responsible for sign in with google and github
 class SignInButtons extends StatelessWidget {
   const SignInButtons({super.key});
 

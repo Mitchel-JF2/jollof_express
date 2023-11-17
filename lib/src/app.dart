@@ -6,6 +6,7 @@ import 'package:jollof_express/src/config/themes/app_theme.dart';
 
 import 'modules/authentication/views/authentication_view.dart';
 
+/// This is the base widget of Jollof Express
 class JollofExpressApp extends StatelessWidget {
   const JollofExpressApp({super.key});
 
