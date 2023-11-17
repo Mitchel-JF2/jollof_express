@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'key_value_pair.dart';
 
+// Some dummy details about the order
 class OrderDetails extends StatelessWidget {
   const OrderDetails({
     super.key,

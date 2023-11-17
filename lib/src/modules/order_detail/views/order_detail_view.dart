@@ -6,6 +6,7 @@ import 'components/order_details/order_details.dart';
 import 'components/ordered_item_image.dart';
 import 'components/track_your_order_button.dart';
 
+/// this is the page that shows details related to the Jollof you ordered
 class OrderDetailView extends StatelessWidget {
   const OrderDetailView({super.key});
 

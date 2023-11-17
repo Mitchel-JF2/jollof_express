@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jollof_express/src/global/utils/order_level.dart';
 
-/// this is a scoped provider, 
+/// this is a scoped provider,
 /// it only contains state relating to OrderTrackingViews
 class OrderTrackingProvider {
   OrderTrackingProvider(this.context);
@@ -32,6 +32,7 @@ class OrderTrackingProvider {
     }
   }
 
+  ///whether to show a checkbox that depicts this order as completed
   CrossFadeState showCheckMark(int i, currentOrderIndex, lastIndex) {
     if (i == currentOrderIndex && i == lastIndex) {
       return CrossFadeState.showSecond;

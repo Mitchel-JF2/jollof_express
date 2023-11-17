@@ -7,6 +7,7 @@ import 'description_for_tracking_progress_levels.dart';
 import 'tracking_progress_bar.dart';
 import 'tracking_progress_levels.dart';
 
+// a progress bar with 6 divisions, it depicts each order stage
 class LiveTrackingBar extends StatelessWidget {
   const LiveTrackingBar({super.key});
 

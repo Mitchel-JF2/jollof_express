@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:jollof_express/src/config/assets/asset_path.dart';
 
+// An image of some sweet sweet Jollof rice or spaghetti
 class OrderedItemImage extends StatefulWidget {
   const OrderedItemImage({super.key});
 

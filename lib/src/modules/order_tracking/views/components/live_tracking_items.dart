@@ -9,8 +9,8 @@ import 'package:jollof_express/src/global/widgets/pulse_animation.dart';
 import 'package:jollof_express/src/modules/order_tracking/providers/order_tracking_provider.dart';
 import 'package:provider/provider.dart';
 
-class LiveTrackingItem extends StatelessWidget {
-  const LiveTrackingItem({
+class LiveTrackingItems extends StatelessWidget {
+  const LiveTrackingItems({
     super.key,
   });
 
