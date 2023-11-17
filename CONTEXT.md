@@ -1,6 +1,4 @@
-if you're seeing an incomplete context, don't worry, it'll be updated within the hour, please check again later.
-
-# Welcome to the Reasoning Behind Jollof Express
+# Welcome to the Reasoning Behind Jollof Express!
 
 Here's what I'll talk about:
 
@@ -11,21 +9,19 @@ Here's what I'll talk about:
 
 ## State Mangement
 
-For the sake of simplicity, I chose provider. It is even simpler than setState, especially when you're passing data back and forth.
+For the sake of simplicity, I chose Provider. It is even easier than setState, especially when you're passing data back and forth.
 
-I believe that my choice of Provider will help you to quickly know exactly what the code is doing.
-
-This code is not written for just me, it's written for the entire team, so simplicity is very important.
+I believe that my choice of Provider will help anyone to quickly understand what the code is doing without worrying about how the state management works.
 
 ## Folder Structure
 
 I structured the folders so that they can represent a single topic or a group of related topics.
 
-The modules folder contains all the pages/screens in the app. A page/screen is referred to as a module because it contains everything related to a specific page.
+The modules folder contains all the pages/screens in the app. A page/screen is referred to as a module because it contains everything related to a specific page/screen.
 
-It has it's own provider as well as other module/page specific configurations, and the excess widgets are broken down into components.
+It has it's own provider as well as other page/screen specific configurations, the excess widgets are broken down into components.
 
-Here's an overview of the folder structure
+Here's an overview of the folder structure:
 
 ```
 assets/
@@ -33,9 +29,9 @@ lib/ --->
         - main.dart
         - firebase_options.dart
         src/ --->
-                config/ contains app wide configurations
-                global/ everthing that is reuseable or has a global scope
-                modules/ the pages and screens in the app
+                 config/ contains app wide configurations
+                 global/ everthing that is reuseable or has a global scope
+                 modules/ the pages and screens in the app
 
 ```
 
@@ -56,8 +52,16 @@ In the context of the Time Constraint, I had to do the minimum that was required
 
 The extra features I planned on integrating were:
 
-- Recreating the project in 4 different state management solutions that would be located in 4 different branches
-- Adding a Rating at the end of a successful order
-- Persisting the Order Level 
+- Recreating the project in 4 different state management solutions that would be located in 5 different branches. The state management I wanted to use were provider, riverpod, getX, stacked, bloc (but bloc is my least favorite)
+- Animating a Rating at the end of a successful order, as well as a feed back text field
+- Persisting the Order Level
 - Making the message broadcast specific to a device
 - Making the UI much better
+- Caluclating and adding more animations like page transitions, etc
+
+
+## All in all
+
+The reuirements were achieved, this stage is over, and most importantly, you know why I did what I did. 🤗
+
+So, I'm currently sitting at the edge of my seat... eagerly waiting to hear from you. 😉🤗
