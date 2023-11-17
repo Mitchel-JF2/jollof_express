@@ -16,7 +16,7 @@ class AblyProvider extends ChangeNotifier {
   AblyProvider(this.context) {
     clientOptions = ably.ClientOptions(
       // TODO: PUT YOUR ALBY API KEY HERE
-      key: 'D9fsog.FW7XJw:pOCV38HQjCrxL2JKUJ_0oQ0oRpklMUlL1JoMd2943dc',
+      key: 'YOUR_ALBY_API_KEY',
     );
     realtime = ably.Realtime(options: clientOptions);
     _initializeAlby();
