@@ -5,7 +5,7 @@ Express jollof is a simple demo application that tries to create real-time scene
 
 ## Before You Run the App
 - Complete all the TODOs:
-- Check the pubspec.yaml file to make sure your dart version is compatible, if it isn't the dart version in the yaml file
+- Check the pubspec.yaml file to make sure your dart version is compatible, if it isn't, you can downgrade the dart version in the yaml file
 - Run flutter pub get
 - Insert your Ably API key (make a project wide search for "TODO", you'll see where to put the key)
 - If you'd like to get some context as to how this app was created and the decisions made, as well as the folder structure, you can check out the CONTEXT.md file at the root level of this project

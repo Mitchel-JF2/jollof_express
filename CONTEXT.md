@@ -52,12 +52,13 @@ In the context of the Time Constraint, I had to do the minimum that was required
 
 The extra features I planned on integrating were:
 
-- Recreating the project in 4 different state management solutions that would be located in 5 different branches. The state management I wanted to use were provider, riverpod, getX, stacked, bloc (but bloc is my least favorite)
+- Recreating the project in 4 other state management solutions that would be located in different branches. The other state management I wanted to use were riverpod, getX, stacked, bloc (but bloc is my least favorite)
 - Animating a Rating at the end of a successful order, as well as a feed back text field
 - Persisting the Order Level
 - Making the message broadcast specific to a device
 - Making the UI much better
 - Caluclating and adding more animations like page transitions, etc
+- Last but not the least... write some tests!
 
 
 ## All in all
